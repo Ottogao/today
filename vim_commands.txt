@@ -1,0 +1,94 @@
+this is a test we need to see how vi/vim works in a short way.
+
+1. Cursor movement
+  h - move left
+  j - move down
+  k - move up
+  l - move right
+  w - jump by start of words (punctuation considered words)
+  W - jump by words (spaces separate words)
+  e - jump to end of words (punctuation considered words)
+  E - jump to end of words (no punctuation)
+  b - jump backward by words (punctuation considered words)
+  B - jump backward by words (no punctuation)
+  0 - start of line
+  ^ - first non-blank character of line
+  $ - end of line
+  nG - Go to command (prefix with number - 5G goes to line 5)
+  ^F - Forward screenful
+  ^B - Backward screenful
+  ^f - one page forward
+  ^b - one page backward
+  ^U - Up half screenful
+  ^D - down half screenful
+
+2. Insert Mode - Inserting/Appending text
+  i - start insert at cursor
+  I - insert at beginning of the line
+  a - append after the cursor
+  A - append at the end of line
+  o - open (append) blank line below current line
+  O - open blank line above current line
+  ea - append at end of word
+  Esc - exit insert mode
+
+3. Exit commands
+  :wq - Wirte file to disk and quit
+  :cq - Quit anyway
+  :q! - Quit (no warning, without writing)
+  :q - Quit (warning is given if a modified file is not saved)
+  ZZ - save workspace and quit the eidtor (same as :wq)
+  : 10,25 w temp - write lines 10 to 25 into file name temp
+
+4. Text deletion commands
+  x - delete character
+  dw - delete word from the cursor on
+  db - delete word backward
+  dd - delete line
+  d$ - delete to the end of line
+  d^ - delete to the beginning of line
+
+5. Yank commands
+  yy - yank current line
+  y$ - yank to the end of current line from cursor
+  yw - yank from cursor to end of of current word
+  5yy - yank 5 lines
+
+6. Paste commands
+  p - paste below cursor
+  P - paste above cursor
+  "2p - paste from buffer 2
+  u - undo last change
+  U - restore line
+  J - join next line down to the end of the current
+
+7. File manipulation commands
+  :w - write workspace to original file
+  :w file - write to the named file
+  :e file - start editing a new file
+  :r file - read contents of a file to the workspace
+
+8. Working with multiple files
+  :e file - edit a file in new buffer
+  :bn - go to next buffer
+  :bp - go to previous buffer
+  :bd - delete a buffer (close a file)
+  :sp file - open a file in a new buffer and split window
+  :vsp file - vertically split window
+  ^ws - split window
+  ^ww - switch window
+  ^wq - quit a window
+  ^wv - split window vertically
+  ^wh - move cursor to the left window
+  ^wl - move cursor to the right window
+  ^wj - move cursor to the window below
+  ^wk - move cursor to the window above
+  : res +/-n  - resize window height by n rows
+  : vertical resize +/-n  - resize window width by n columns
+  n ^w+/- - resize windows height by n rows
+  n ^w</> - resize window width by n columns
+  ^w=  - resize all the windows equally
+
+9. Tabs
+  tabn file - open a file in new tab
+  ^wT - move the current split window into its own tab
